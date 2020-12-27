@@ -128,18 +128,17 @@ small {
 }
 
 .model {
-  height: 100vh;
-  width: 100vw;
   position: absolute;
+  bottom: 2rem;
+  left: 1rem;
   z-index: 999;
-  background-color: #ccc;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .model-container {
-  max-width: 600px;
+  max-width: 300px;
   min-height: 30vh;
   background-color: white;
   text-align: center;
@@ -162,4 +161,5 @@ small {
 .model-text {
   padding: 15px 0;
   text-align: left;
+  font-size: 0.8rem;
 }
