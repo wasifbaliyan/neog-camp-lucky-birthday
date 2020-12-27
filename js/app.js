@@ -6,6 +6,7 @@ const result = document.querySelector(".result");
 const model = document.querySelector(".model");
 const modelBtn = document.querySelector(".model-btn");
 const img = document.querySelector(".img");
+
 img.style.display = "none";
 model.style.display = "none";
 
@@ -31,14 +32,16 @@ form.addEventListener("submit", (e) => {
   bday.value = "";
 
   section.classList.add("lucky-section");
+
   if (areYouLucky) {
     result.textContent = "Congratulations, You're lucky person.";
     img.style.display = "block";
     img.src = "/assets/happy.svg";
   } else {
-    result.textContent = `OHHH! You're ${
+    result.textContent = `OHHH! You're missed by ${
       dateSum % luckyNumber
-    } days away from being lucky.`;
+    } days from being lucky.`;
+
     img.style.display = "block";
     img.src = "/assets/sad.svg";
   }
